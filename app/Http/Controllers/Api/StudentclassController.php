@@ -34,4 +34,19 @@ class StudentclassController extends Controller
         $studentClass = Studentclass::findOrFail($id);
         return response()->json($studentClass);
     }
+
+    public function Update(Request $request, $id)
+    {
+        Studentclass::findOrFail($id)->update([
+            'class_name' => $request->class_name,
+        ]);
+
+        return response('Student Class Update Succesfully!');
+    }
+
+    public function Delete($id)
+    {
+        Studentclass::findOrFail($id)->delete();
+        return response('Student Class Delete Succesfully!');
+    }
 }
