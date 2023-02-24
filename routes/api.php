@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\StudentclassController;
+use App\Http\Controllers\Api\SubjectController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -25,3 +26,10 @@ Route::post('/class/store', [StudentclassController::class, 'Store']);
 Route::get('/class/edit/{id}', [StudentclassController::class, 'Edit']);
 Route::post('/class/update/{id}', [StudentclassController::class, 'Update']);
 Route::get('/class/delete/{id}', [StudentclassController::class, 'Delete']);
+
+// Subject Class Routes
+Route::get('/subject', [SubjectController::class, 'Index']);
+Route::post('/subject/store', [SubjectController::class, 'Store']);
+Route::get('/subject/edit/{id}', [SubjectController::class, 'Edit']);
+Route::post('/subject/update/{id}', [SubjectController::class, 'Update']);
+Route::get('/subject/delete/{id}', [SubjectController::class, 'Delete']);
