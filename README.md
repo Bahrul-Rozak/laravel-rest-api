@@ -24,5 +24,5 @@
 - `GET: http://localhost:8000/api/student`
 - `POST: http://localhost:8000/api/student/store`
 - `PATCH: http://localhost:8000/api/student/edit/{id}`
-- `PUT: http://localhost:8000/api/class/student/{id}`
+- `PUT: http://localhost:8000/api/student/update/{id}`
 - `DELETE: http://localhost:8000/api/student/delete/{id}`
