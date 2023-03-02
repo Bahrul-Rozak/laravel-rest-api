@@ -1,4 +1,4 @@
-### API SPECS
+### API SPECIFICATIONS
 ## Class
 - `GET: http://localhost:8000/api/class`
 - `POST: http://localhost:8000/api/class/store`
